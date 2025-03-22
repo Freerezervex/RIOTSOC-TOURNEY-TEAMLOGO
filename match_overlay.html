@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>League Match Overlay</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Orbitron', sans-serif;
+            color: white;
+            background: transparent;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .overlay {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 700px;
+            padding: 20px;
+            background: #1E1E1E;
+            border-radius: 10px;
+            border: 2px solid #444;
+            text-align: center;
+            position: relative;
+        }
+
+        .team {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 45%;
+        }
+
+        .team-name {
+            font-size: 24px;
+            font-weight: bold;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-transform: uppercase;
+        }
+
+        .blue-team .team-name {
+            background: #004AAD;
+        }
+
+        .red-team .team-name {
+            background: #B22222;
+        }
+
+        .team-logo {
+            width: 80px;
+            height: 80px;
+            object-fit: contain;
+            margin-top: 10px;
+        }
+
+        .vs-text {
+            font-size: 32px;
+            font-weight: bold;
+            color: #FFD700;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    </style>
+</head>
+<body>
+    <div class="overlay">
+        <div class="team blue-team">
+            <div class="team-name">Blue Team</div>
+            <img src="https://raw.githubusercontent.com/your-username/tournament-overlay/main/teamA_logo.png" class="team-logo" alt="Blue Team Logo">
+        </div>
+        <div class="vs-text">VS</div>
+        <div class="team red-team">
+            <div class="team-name">Red Team</div>
+            <img src="https://raw.githubusercontent.com/your-username/tournament-overlay/main/teamB_logo.png" class="team-logo" alt="Red Team Logo">
+        </div>
+    </div>
+</body>
+</html>
